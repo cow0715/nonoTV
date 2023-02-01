@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="signup-container">
+        <div class="logo">
+            <h1><a href="index.html">OO 티비</a></h1>
+        </div>
+        <div class="input-container">
+            <form action="signup.html">
+                <div class="id-box">
+                    <input type="text" id="id-box" placeholder="아이디를 입력해주세요">
+                    <p id="userIdErr">이름은 5글자이상 문자로 입력하세요.</p>
+                </div>
+                <div class="pw-box">
+                    <input type="password" id="pw-box" placeholder="비밀번호를 입력해주세요">
+                    <p id="userPwdErr">TESTtest1234$ 특수문자[!, $, %]</p>
+                </div>
+                <div class="pw-box">
+                    <input type="password" id="pw-box2" placeholder="비밀번호를 다시 한 번 입력해주세요">
+                    <p id="userRepwdErr">이전에 입력한 비밀번호와 같지 않습니다.</p>
+                </div>
+                <div class="email-box">
+                    <input type="email" id="email-box" placeholder="이메일 주소를 입력해주세요">
+                </div>
+                <p id="userEmailErr">userid@naver.com, user.id@naver.co.ko</p>
+                <div class="btn-box">
+                    <button type="submit" id="submitBtn">회원가입</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./JS/fetch.js"></script>
+    <script src="./JS/register.js"></script>
+</body>
+</html>

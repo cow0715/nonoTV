@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OO티비</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="./JS/swiper.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="menuBtn">
+                <i class='bx bx-menu menu-icon navbarbtn'></i>
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <span>OO티비</span>
+                    <h1>OO티비 영화,드라마,예능, 미드, 애니 다시보기</h1>
+                </a>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="search" class="search-input" placeholder="검색어를 입력하세요">
+                <button type="submit" class="searchBtn"><i class='bx bx-search'></i></button>
+            </div>
+        </div>
+        <div class="login-container">
+            <div class="login">
+                <a href="login.html">
+                    <span>로그인</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="collapse-menu">
+        <div class="collapse-box">
+            <div class="home">
+                <a href="#">
+                    <i class='bx bx-home-alt' ></i>
+                </a>
+            </div>
+            <div class="home">
+                <a href="#">
+                    <i class='bx bx-star' ></i>
+                </a>
+            </div>
+            <div class="home">
+                <a href="#">
+                    <i class='bx bx-history' ></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <aside id="aside" >
+        <div class="nav-container">
+            <div class="main-menu bottom-line">
+                <div class="home">
+                    <a href="#">
+                        <i class='bx bx-home-alt' ></i>
+                        <span>홈</span>
+                    </a>
+                </div>
+                <div class="home">
+                    <a href="#">
+                        <i class='bx bx-star' ></i>
+                        <span>인기영상</span>
+                    </a>
+                </div>
+                <div class="home">
+                    <a href="#">
+                        <i class='bx bx-history' ></i>
+                        <span>시청기록</span>
+                    </a>
+                </div>
+            </div>
+            <div class="sub-menu">
+                <div class="nav-list bottom-line">
+                    <div class="nav-movie">
+                        <div class="nav-icon">
+                            <i class='bx bx-movie'></i>
+                            <span>영화</span>
+                        </div>
+                        <div class="nav-list-item">
+                            <a href="#">한국영화</a>
+                            <a href="#">해외영화</a>
+                            <a href="#">[극장판]애니메이션</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-list bottom-line">
+                    <div class="nav-movie">
+                        <div class="nav-icon">
+                            <i class='bx bx-tv' ></i>
+                            <span>방송프로그램</span>
+                        </div>
+                        <div class="nav-list-item">
+                            <a href="drama.html">드라마</a>
+                            <a href="drama.html">예능프로그램</a>
+                            <a href="drama.html">다큐/시사</a>
+                            <a href="drama.html">애니메이션</a>
+                            <a href="drama.html">해외드라마</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-list bottom-line">
+                    <div class="nav-movie">
+                        <div class="nav-icon">
+                            <i class='bx bx-film' ></i>
+                            <span>추억의 저장소</span>
+                        </div>
+                        <div class="nav-list-item">
+                            <a href="drama.html">추억의 드라마</a>
+                            <a href="drama.html">추억의 예능</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <section>
+        <div class="main-ranking bottom-line">
+            <div class="main-list ">
+                <div class="coordinates">
+                    <div class="main-title">
+                        <h1>지금 나에게 필요한 인기 영상</h1>
+                    </div>
+                    <div class="main-btn">
+                        <div class="inner-btn">
+                            <div class="left-btn">
+                                <a href="#"><i class='bx bx-chevron-left arrow-icon'></i></a>
+                            </div>
+                            <div class="right-btn">
+                                <a href="#"><i class='bx bx-chevron-right arrow-icon'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-poster ">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="main-movie">
+                                <div class="movie-box">
+                                    <a href="#">
+                                        <img src="image/movie1.jpg" alt="">
+                                        <div class="movie-title">재벌집 막내아들</div>
+                                    </a>
+                                    <div class="movie-genre"><span>드라마</span></div>
+                                    <div class="heart-icon">
+                                        <i class='bx bx-heart'></i>
+                                        <span>1377</span>
+                                    </div>
+                                </div>
+                                <div class="movie-box">
+                                    <a href="#">
+                                        <img src="image/movie2.jpg" alt="">
+                                        <div class="movie-title">재벌집 막내아들</div>
+                                    </a>
+                                    <div class="movie-genre"><span>드라마</span></div>
+                                    <div class="heart-icon">
+                                        <i class='bx bx-heart'></i>
+                                        <span>1377</span>
+                                    </div>
+                                </div>
+                                <div class="movie-box">
+                                    <a href="#">
+                                        <img src="./image/movie3.jpg" alt="">
+                                        <div class="movie-title">재벌집 막내아들</div>
+                                    </a>
+                                    <div class="movie-genre"><span>드라마</span></div>
+                                    <div class="heart-icon">
+                                        <i class='bx bx-heart'></i>
+                                        <span>1377</span>
+                                    </div>
+                                </div>
+                                <div class="movie-box">
+                                    <a href="#">
+                                        <img src="./image/movie4.jpg" alt="">
+                                        <div class="movie-title">재벌집 막내아들</div>
+                                    </a>
+                                    <div class="movie-genre"><span>드라마</span></div>
+                                    <div class="heart-icon">
+                                        <i class='bx bx-heart'></i>
+                                        <span>1377</span>
+                                    </div>
+                                </div>
+                                <div class="movie-box">
+                                    <a href="#">
+                                        <img src="./image/movie5.jpg" alt="">
+                                        <div class="movie-title">재벌집 막내아들</div>
+                                    </a>
+                                    <div class="movie-genre"><span>드라마</span></div>
+                                    <div class="heart-icon">
+                                        <i class='bx bx-heart'></i>
+                                        <span>1377</span>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">Slide 2</div>
+                          <div class="swiper-slide">Slide 3</div>
+                          <div class="swiper-slide">Slide 4</div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+            <div id="new-drama" class="content-box">
+                <div class="introduce-box">
+                    <div class="content-title">
+                        <h1>최신 드라마를 모두 감상해보세요</h1>
+                    </div>
+                    <div class="more-btn">
+                        <a href="drama.html">
+                            <span>전체보기</span>
+                            <i class='bx bx-chevron-right arrow-icon'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <ul class="content-video">
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie1.jpg" alt="">
+                                <p class="video-title">재벌집 막내아들</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie2.jpg" alt="">
+                                <p class="video-title">금혼령, 조선혼인금지령</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie3.jpg" alt="">
+                                <p class="video-title">빨간 풍선</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie4.jpg" alt="">
+                                <p class="video-title">환혼 빛과 그림자</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie5.jpg" alt="">
+                                <p class="video-title">삼남매가 용감하게</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="new-movie" class="content-box">
+                <div class="introduce-box">
+                    <div class="content-title">
+                        <h1>알고보면 더욱 재밌는 영화</h1>
+                    </div>
+                    <div class="more-btn">
+                        <a href="drama.html">
+                            <span>전체보기</span>
+                            <i class='bx bx-chevron-right arrow-icon'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <ul class="content-video">
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie1.jpg" alt="">
+                                <p class="video-title">재벌집 막내아들</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie2.jpg" alt="">
+                                <p class="video-title">금혼령, 조선혼인금지령</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie3.jpg" alt="">
+                                <p class="video-title">빨간 풍선</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie4.jpg" alt="">
+                                <p class="video-title">환혼 빛과 그림자</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie5.jpg" alt="">
+                                <p class="video-title">삼남매가 용감하게</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="new-entertainment" class="content-box">
+                <div class="introduce-box">
+                    <div class="content-title">
+                        <h1>당신의 웃음을 책임집니다</h1>
+                    </div>
+                    <div class="more-btn">
+                        <a href="drama.html">
+                            <span>전체보기</span>
+                            <i class='bx bx-chevron-right arrow-icon'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <ul class="content-video">
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie1.jpg" alt="">
+                                <p class="video-title">재벌집 막내아들</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie2.jpg" alt="">
+                                <p class="video-title">금혼령, 조선혼인금지령</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie3.jpg" alt="">
+                                <p class="video-title">빨간 풍선</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie4.jpg" alt="">
+                                <p class="video-title">환혼 빛과 그림자</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie5.jpg" alt="">
+                                <p class="video-title">삼남매가 용감하게</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="new-animation" class="content-box">
+                <div class="introduce-box">
+                    <div class="content-title">
+                        <h1>추억의 애니와 최신애니를 한꺼번에</h1>
+                    </div>
+                    <div class="more-btn">
+                        <a href="drama.html">
+                            <span>전체보기</span>
+                            <i class='bx bx-chevron-right arrow-icon'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <ul class="content-video">
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie1.jpg" alt="">
+                                <p class="video-title">재벌집 막내아들</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie2.jpg" alt="">
+                                <p class="video-title">금혼령, 조선혼인금지령</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie3.jpg" alt="">
+                                <p class="video-title">빨간 풍선</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie4.jpg" alt="">
+                                <p class="video-title">환혼 빛과 그림자</p>
+                            </a>
+                        </li>
+                        <li class="video-box">
+                            <a href="#">
+                                <img src="./image/movie5.jpg" alt="">
+                                <p class="video-title">삼남매가 용감하게</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="test">
+            <div class="notice-container">
+                <div class="notice-box">
+                    <div class="notice"><a href="#">공지사항</a></div>
+                    <div class="guide-link"><a href="#">공식 도메인 주소 변경 안내</a></div>
+                </div>
+                <div class="social-media">
+                    <a href="#"><span><i class='bx bxl-telegram'></i></span></a>
+                    <a href="#"><span><i class='bx bxl-instagram'></i></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="test2">
+            <div class="footer-content">
+                <div class="footer-link">
+                    <div class="link-box">
+                        <ul>
+                            <li><a href="#" class="liner">사이트 소개</a></li>
+                            <li><a href="#" class="liner">이용약관</a></li>
+                            <li><a href="#" class="liner">개인정보 취급방침</a></li>
+                            <li><a href="#" class="liner">고객센터</a></li>
+                            <li><a href="#" class="liner">자료요청</a></li>
+                            <li><a href="#" class="liner">모바일 버전</a></li>
+                            <li><a href="#">저작권 보호센터</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-introduce">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsa, molestiae tempora nesciunt voluptates quasi 
+                    </p>
+                    <p>
+                        voluptatum in ullam tenetur, nisi nulla, nihil qui accusamus ad corporis adipisci eligendi animi placeat.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsa, molestiae tempora nesciunt voluptates quasi 
+                    </p>
+                    <p>
+                        voluptatum in ullam tenetur, nisi nulla, nihil qui accusamus ad corporis adipisci eligendi animi placeat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+         var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".right-btn",
+          prevEl: ".left-btn",
+        }
+      });
+    </script>
+    <script>
+        const menuBtn = document.querySelector(".navbarbtn");
+        const aside = document.querySelector("#aside");
+        const collapse = document.querySelector(".collapse-menu");
+        const section = document.querySelector("section");
+        const footer = document.querySelector("footer");
+        
+        function menuClick(){
+            aside.classList.toggle("hide");
+            collapse.classList.toggle("show")
+            section.classList.toggle("active3")
+            footer.classList.toggle("active4")
+        }
+        menuBtn.addEventListener("click", menuClick);
+    </script>
+</body>
+</html>
